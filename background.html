@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./Logo/favicon1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>GraphixStore</title>
+  </head>
+  <body><section id="header">
+    <div class="headerMain">
+      
+      <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+    <div class="modal-dialog modal-dialog-centered myModal">
+      <div class="modal-content myContent">
+
+        <div class="modal-body loginBody">
+          <div class="bodyMain">
+            <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
+            <img src="./Logo/favicon1white.png" alt="">
+            <h3>Welcome to GraphixStore</h3>
+            <h3>Login</h3>
+            <input type="text" placeholder="Username" class="username"/>
+            <br />
+            <div class="password">
+              <input type="password" placeholder="Password" id="passInput"/>
+              <i class="far fa-eye" onclick="showPassword(this)"></i>
+              <span><a href="javascript:void[0]">Forgot Password?</a></span>
+            </div>
+            <button class="loginBtn">Login</button>
+            <p class="signupPara">
+              you don't have an account?
+              <a href="" data-target="#signupModal" data-toggle="modal" data-dismiss="modal">Sign up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Sign Up Modal -->
+
+  <div class="modal" id="signupModal">
+      <div class="modal-dialog modal-dialog-centered myModal2">
+        <div class="modal-content myContent2">
+
+          <div class="modal-body signupBody">
+            <div class="signupbodyMain">
+            <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
+            <img src="./Logo/favicon1white.png" alt="">
+            <h3>Welcome to GraphixStore</h3>
+            <h3>Sign Up</h3>
+              <input type="text" placeholder="Username" class="username2"/>
+              <input type="text" placeholder="Name" class="username2"/>
+              <input type="text" placeholder="Full Name" class="username2"/>
+              <br />
+              <div class="signuppassword">
+                <input type="password" placeholder="Password" id="passInputSignup"/>
+                <i class="far fa-eye passwordEye" onclick="showPasswordSignup(this)"></i>
+                <input type="password" placeholder="Retype-Password" id="retypepassInputSignup"/>
+                <i class="far fa-eye retypePasswordEye" onclick="retypepassInputSignup(this)"></i>
+              </div>
+              <button class="signupBtn">Signup</button>
+              <p class="loginPara">
+                Already have an account?
+                <a href="" data-target="#loginModal" data-toggle="modal" data-dismiss="modal">Login</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <!-- logo -->
+      <div class="logo">
+        <img src="./Logo/GraphixStoreLogoBlack.png" alt="" />
+      </div>
+      <!-- navbar  -->
+      <div class="navbarr">
+        <div>
+          <a href="./index.html"><i class="fas fa-home"></i></a>
+        </div>
+        <div><a href="./vectors.html">Vectors</a></div>
+        <div><a href="./background.html">Backgrounds</a></div>
+        <div class="navPsd"><a href="./psd.html">PSD</a></div>
+        <div class="navNewResources"><a href="./newresources.html">New Resources</a></div>
+        <div onmouseover="onMore()" onmouseout="onMoreOut()" id="navMore">  
+        <!-- <div onclick="onMore()" id="navMore">   -->
+          <a href="javascript:void[0]"
+            >More <i class="fas fa-caret-down"></i>
+          </a>
+          <!-- More Options  -->
+          <div  onmouseover="onMore()" onmouseout="onMoreOut()" id="more">
+            <ul>
+              <a href="./psd.html" style="display: none;" class="morePsd"><li>PSD</li></a> 
+              <a href="./newresources.html" style="display: none;" class="moreNewResources"><li>New Resources</li></a> 
+              <a href="./logo.html"><li>Logo</li></a> 
+              <a href="./posters.html"><li>Posters</li></a>        
+              <a href="./businesscard.html"><li>Business Card</li></a>
+              <a href="./flyers.html"><li>Flyer</li></a>
+              <a href="./texteffect.html"><li>Text Effects</li></a>
+            </ul>
+          </div>
+                </div>
+                </div>
+
+      <!-- login and signup buttons  -->
+      <div class="account">
+        <a href="./favorite.html">
+        <button class="cartBtn">
+          <i class="fas fa-cart-arrow-down"></i>
+        </button>
+      </a>
+        <button class="login" data-target="#loginModal" data-toggle="modal">
+          <span>
+            Login
+          </span>
+          </button>
+        <button class="signup" data-target="#signupModal" data-toggle="modal"><span>
+          Sign Up
+        </span></button>
+      </div>
+
+      <!-- Menu Icon  -->
+      <div class="menuIcon" id="menuIconn" onclick="openSideMenu()">
+      <i class="fas fa-bars" id="menuIcon"></i>
+    </div>
+  </section>
+
+  <!-- Side Menu  -->
+  <div id="sideMenu" class="animate__animated animate__bounceInRight">
+    <div class="sideMenuContent">
+    <ul id="home">
+      <a href="./index.html"><li><i class="fas fa-home"></i></li></a>
+      <a href="./favorite.html"><li><i class="fas fa-cart-arrow-down"></i></li></a>
+      <a href="./vectors.html"><li>Vectors</li></a>
+      <a href="./background.html"><li>Backgrounds</li></a>
+      <a href="./psd.html"><li>PSD</li></a>
+      <a href="./newresources.html"><li>New Resources</li></a>
+      <a href="javascript:void(0)" onclick="SideBarMoreoption()" id="sideMenuMore"><li>More<i class="fas fa-caret-down"></i></li></a>
+    </ul>
+    <ul id="moreOption">
+      <a href="./logo.html"><li>Logo</li></a> 
+      <a href="./posters.html"><li>Posters</li></a>        
+      <a href="./businesscard.html"><li>Business Card</li></a>
+      <a href="./flyers.html"><li>Flyer</li></a>
+      <a href="./invitationcard.html"><li>Invitation Card</li></a>
+      <a href="./cv.html"><li>CV</li></a>
+      <a href="./texteffect.html"><li>Text Effects</li></a>
+    </ul>
+    <ul>
+      <a href="javascript:void(0)" data-target="#loginModal" data-toggle="modal"><li>Login</li></a>
+      <a href="javascript:void(0)" data-target="#signupModal" data-toggle="modal"><li>Sign Up</li></a>
+    </ul>
+    </div>
+  </div>
+
+  <!-- Searchbar  -->
+  <div id="searchbar" class="container-fluid">
+    <h5>Resources for free downloads </h1>
+    <div class="allCategories" onclick="showCategories()">
+      All Categories <i class="fas fa-caret-down"></i> 
+      <div id="categoriesDiv">
+        <div>
+          <input type="radio" id="png" name="allcategory" value="PNG">
+          <label for="png" onclick="categoriesValue(this)">PNG</label>
+        </div>
+        <div>
+          <input type="radio" id="jpeg" name="allcategory" value="JPEG">
+          <label for="jpeg" onclick="categoriesValue(this)">JPEG</label>
+        </div>
+        <div>
+          <input type="radio" id="ai" name="allcategory" value="AI" checked>
+          <label for="ai" onclick="categoriesValue(this)">AI</label>
+        </div>
+        <div>
+          <input type="radio" id="psd" name="allcategory" value="PSD">
+          <label for="psd" onclick="categoriesValue(this)">PSD</label>
+        </div>
+      </div>
+    </div>
+    <input type="text" id="search" placeholder="Search Resources..." autocomplete="off">
+    <button class="searchBtn"><i class="fas fa-search"></i></button>
+  </div>
+
+
+
+  
+<!-- Backgrounds carts-->
+<div id="bsnscardCart" class="container-fluid">
+    <div class="cartheading">
+      <h4>Backgrounds</h4>
+    </div>
+    <div class="mainCartsDiv">
+      <!-- cart1 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/1.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Gold And Black Abstract Modern Background</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart2 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/2.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Abstract Wave Background In Colorful</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart3 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/3.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Abstract Shape Background Design Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart4 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/4.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Amazing Vector Luxury Background Designs Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart5 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/5.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Creative Abstract Colorful Background Design Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart6 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/6.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Abstract Vector Background Design Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart7 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/7.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Abstract Background Design Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart8 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/8.png" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Awesome And Creative Thai Border Transparent Background</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart9 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/9.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Pink And Blue Combination Minimal Abstract Background</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart10 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/10.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Modern Art Banner Design Background Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart11 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/11.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Pastel Brick Wall Background Design Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart12 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/12.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Abstract Digital Technology With Blue Background</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart13 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/13.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Transparent Background Twibbon Design Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart14 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/14.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Transparent Soap Bubbles Vector Colorful Falling</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart15 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/15.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Professional Abstract Background Template Design</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart16 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/16.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Abstract Bokeh Blue And Light Background</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart17 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/17.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Professional Abstract Background Template</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart18 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/18.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Summer Palm Tropical Border And Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart19 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/19.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Purple Square Geometric Dot Surface Purple Gradient</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart20 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/20.png" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Abstract Background Png Design Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart21 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/21.png" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Abstract Creative Vector Background Png Design</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart22 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/22.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Islamic Background Border Design Free</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart23 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/23.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Pastel Color Vector Low Poly Crystal Background</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- cart24 -->
+      <div class="carts">
+        <div class="image" onclick="cartsdetail(this)">
+          <img src="./images/backgrounds/24.jpg" alt="">
+          <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+        </div>
+        <div class="footer">
+          <span id="cartSpan">Arabic Arabesque Pattern Greeting Card Background</span>
+          <div class="footerdiv">
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+          <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+        <!-- New Resources carts-->
+        <div id="newResourcesCart" class="container-fluid">
+          <div class="cartheading">
+            <h4>New Resources</h4>
+          </div>
+          <div class="mainCartsDiv">
+            <!-- cart1  -->
+            <div class="carts">
+              <div class="image" onclick="cartsdetail(this)">
+                <img src="./images/new/1.jpg" alt="">
+                <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+              </div>
+              <div class="footer">
+                <span id="cartSpan">Geometry Final Promotion Template</span>
+                <div class="footerdiv">
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+              </div>
+              </div>
+            </div>
+            
+    
+            <!-- cart2 -->
+            <div class="carts">
+              <div class="image" onclick="cartsdetail(this)">
+                <img src="./images/new/2.jpg" alt="">
+                <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+              </div>
+              <div class="footer">
+                <span id="cartSpan">Grand Opening Fashion Geometric</span>
+                <div class="footerdiv">
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+              </div>
+              </div>
+            </div>
+    
+            <!-- cart3 -->
+            <div class="carts">
+              <div class="image" onclick="cartsdetail(this)">
+                <img src="./images/new/3.jpg" alt="">
+                <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+              </div>
+              <div class="footer">
+                <span id="cartSpan">Blue Fashion Furniture Promotion Banner</span>
+                <div class="footerdiv">
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+              </div>
+              </div>
+            </div>
+    
+            <!-- cart4 -->
+            <div class="carts">
+              <div class="image" onclick="cartsdetail(this)">
+                <img src="./images/new/4.jpg" alt="">
+                <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+              </div>
+              <div class="footer">
+                <span id="cartSpan">Food Social Media Template</span>
+                <div class="footerdiv">
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+              </div>
+              </div>
+            </div>
+    
+            <!-- cart5 -->
+            <div class="carts">
+              <div class="image" onclick="cartsdetail(this)">
+                <img src="./images/new/5.jpg" alt="">
+                <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+              </div>
+              <div class="footer">
+                <span id="cartSpan">Geometric Fault Effect Poster</span>
+                <div class="footerdiv">
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+              </div>
+              </div>
+            </div>
+    
+            <!-- cart6 -->
+            <div class="carts">
+              <div class="image" onclick="cartsdetail(this)">
+                <img src="./images/new/6.jpg" alt="">
+                <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+              </div>
+              <div class="footer">
+                <span id="cartSpan">Simple Geometric Pet Shop Service Poster</span>
+                <div class="footerdiv">
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+              </div>
+              </div>
+            </div>
+    
+            <!-- cart7 -->
+            <div class="carts">
+              <div class="image" onclick="cartsdetail(this)">
+                <img src="./images/new/7.jpg" alt="">
+                <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+              </div>
+              <div class="footer">
+                <span id="cartSpan">Simple Geometric Pet Shop Service</span>
+                <div class="footerdiv">
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+              </div>
+              </div>
+            </div>
+    
+            <!-- cart8 -->
+            <div class="carts" id="cart8">
+              <div class="image" onclick="cartsdetail(this)">
+                <img src="./images/new/8.jpg" alt="">
+                <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
+              </div>
+              <div class="footer">
+                <span id="cartSpan">American Hamburg Comic Template</span>
+                <div class="footerdiv">
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
+                <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Announcements Section -->
+      <div id="announcements" class="container">
+        <h3>Announcements</h3>
+        <div id="announcImages">
+          <img src="./images/announcement1.jpg" alt="" id="announceImg">
+        </div>
+      </div>
+
+
+  <!-- Footer  -->
+  <div id="endFooter">
+    <div class="container footerDiv">
+      <div class="footerContent">
+        <div class="div1">
+          <img src="./Logo/GraphixStoreLogoWhite.png" alt="">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="javascript:void(0)" data-target="#loginModal" data-toggle="modal">Login</a></li>
+            <li><a href="javascript:void(0)" data-target="#signupModal" data-toggle="modal">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="div2">
+          <ul>
+            <li><a href="javascript:void[0]">Popular Resources</a></li>
+            <li><a href="./invitationcard.html">New Resources</a></li>
+            <li><a href="javascript:void[0]">Premium Resources</a></li>
+          </ul>
+          <div>
+          <ul>
+            <li><a href="./vectors.html">Vectors</a></li>
+            <li><a href="./png.html">PNG</a></li>
+            <li><a href="./background.html">Backgrounds</a></li>
+            <li><a href="./logo.html">Logo</a></li>
+            <li><a href="./businesscard.html">Business Card</a></li>
+        </ul>
+        <ul>
+          <li><a href="./flyers.html">Flyers</a></li>
+          <li><a href="./posters.html">Posters</a></li>
+          <li><a href="./texteffect.html">Text Effects</a></li>
+      </ul>
+      </div>
+      </div>
+        <div class="div3">
+          <img src="./images/icongoogleplay.svg" alt="">
+          <img src="./images/iconapplestore.svg" alt="">
+        </div>
+      </div>
+      <div class="footerfooter">
+        <span>Designed by : Hanzala Ahmed</span>
+        <span>&copy; 2021...</span>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="app2.js"></script>
+<script src="app.js"></script>
+</html>
