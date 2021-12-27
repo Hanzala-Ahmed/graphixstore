@@ -592,21 +592,21 @@ body {
 @keyframes shake {
   10%,
   90% {
-    transform: translate3d(-1px, 0, 0);
+    transform: translate3d(1px, 0, 0);
   }
   20%,
   80% {
-    transform: translate3d(2px, 0, 0);
+    transform: translate3d(0px, 0, 0);
   }
 
   30%,
   50%,
   70% {
-    transform: translate3d(-2px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
   }
   40%,
   60% {
-    transform: translate3d(2px, 0, 0);
+    transform: translate3d(1px, 0, 0);
   }
 }
 
@@ -1397,10 +1397,20 @@ body {
   align-items: center;
 }
 
+/* .cartDetailImgImage:hover {
+  transition: transform 1s ease;
+} */
+
+.cartDetailImgImage img:hover {
+  transform:  scale(1.03);
+}
+
 .cartDetailImg .cartDetailImgImage img {
   width: 70%;
   height: 90%;
   margin-top: 10px;
+  transform-origin: 65% 75%;
+  transition: transform .45s, visibility .45s ease-in;
 }
 
 .cartdetailDownload {
@@ -1477,6 +1487,12 @@ body {
   color: #ffffff;
   padding: 4px;
   border-radius: 4px;
+}
+
+
+.cartdetailDownloadBtn:hover {
+  width: 65%;
+  transition: 0.4s ease-in-out;
 }
 
 .cartdetailDownloadDiv .cartdetailDownloadBtn i {

@@ -31,15 +31,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GraphixStore</title>
   </head>
-  <body><section id="header">
-    <div class="headerMain">
-      
-      <!-- Login Modal -->
+  <body>
+    
+    <!-- Login Modal -->
     <div class="modal" id="loginModal">
-    <div class="modal-dialog modal-dialog-centered myModal">
-      <div class="modal-content myContent">
-
-        <div class="modal-body loginBody">
+      <div class="modal-dialog modal-dialog-centered myModal">
+        <div class="modal-content myContent">
+          
+          <div class="modal-body loginBody">
           <div class="bodyMain">
             <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
             <img src="./Logo/favicon1white.png" alt="">
@@ -62,19 +61,19 @@
       </div>
     </div>
   </div>
-
-    <!-- Sign Up Modal -->
-
+  
+  <!-- Sign Up Modal -->
+  
   <div class="modal" id="signupModal">
-      <div class="modal-dialog modal-dialog-centered myModal2">
+    <div class="modal-dialog modal-dialog-centered myModal2">
         <div class="modal-content myContent2">
-
+          
           <div class="modal-body signupBody">
             <div class="signupbodyMain">
-            <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
-            <img src="./Logo/favicon1white.png" alt="">
-            <h3>Welcome to GraphixStore</h3>
-            <h3>Sign Up</h3>
+              <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
+              <img src="./Logo/favicon1white.png" alt="">
+              <h3>Welcome to GraphixStore</h3>
+              <h3>Sign Up</h3>
               <input type="text" placeholder="Username" class="username2"/>
               <input type="text" placeholder="Name" class="username2"/>
               <input type="text" placeholder="Full Name" class="username2"/>
@@ -95,9 +94,11 @@
         </div>
       </div>
     </div>
-      
-      <!-- logo -->
-      <div class="logo">
+    
+    <section id="header">
+    <div class="headerMain">
+    <!-- logo -->
+    <div class="logo">
         <img src="./Logo/GraphixStoreLogoBlack.png" alt="" />
       </div>
       <!-- navbar  -->
@@ -184,9 +185,11 @@
 
 <!-- Contact Form  -->
 <div id="contact" class="container">
-    <h2>Contact</h2>
-    <h4>Submit your request</h4>
-    <div id="form">
+    <h2 data-aos="zoom-in-right">Contact</h2>
+    <h4 data-aos="zoom-in-right">Submit your request</h4>
+    <div id="form"  data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
         <input type="text" placeholder="Your Name*" id="name">
         <span id="correctName">Please enter valid name</span>
         <input type="email" placeholder="Your Email*" id="email">
@@ -224,7 +227,7 @@
 
   <!-- Footer  -->
   <div id="endFooter">
-    <div class="container footerDiv">
+    <div class="container footerDiv" data-aos="zoom-in"  data-aos-duration="1500">
       <div class="footerContent">
         <div class="div1">
           <img src="./Logo/GraphixStoreLogoWhite.png" alt="">

@@ -31,50 +31,49 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GraphixStore</title>
   </head>
-  <body><section id="header">
-    <div class="headerMain">
-      
-      <!-- Login Modal -->
+  <body>
+    
+    <!-- Login Modal -->
     <div class="modal" id="loginModal">
-    <div class="modal-dialog modal-dialog-centered myModal">
-      <div class="modal-content myContent">
-
-        <div class="modal-body loginBody">
-          <div class="bodyMain">
-            <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
-            <img src="./Logo/favicon1white.png" alt="">
-            <h3>Welcome to GraphixStore</h3>
-            <h3>Login</h3>
-            <input type="text" placeholder="Username" class="username"/>
-            <br />
-            <div class="password">
-              <input type="password" placeholder="Password" id="passInput"/>
-              <i class="far fa-eye" onclick="showPassword(this)"></i>
-              <span><a href="javascript:void[0]">Forgot Password?</a></span>
+      <div class="modal-dialog modal-dialog-centered myModal">
+        <div class="modal-content myContent">
+          
+          <div class="modal-body loginBody">
+            <div class="bodyMain">
+              <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
+              <img src="./Logo/favicon1white.png" alt="">
+              <h3>Welcome to GraphixStore</h3>
+              <h3>Login</h3>
+              <input type="text" placeholder="Username" class="username"/>
+              <br />
+              <div class="password">
+                <input type="password" placeholder="Password" id="passInput"/>
+                <i class="far fa-eye" onclick="showPassword(this)"></i>
+                <span><a href="javascript:void[0]">Forgot Password?</a></span>
+              </div>
+              <button class="loginBtn">Login</button>
+              <p class="signupPara">
+                you don't have an account?
+                <a href="" data-target="#signupModal" data-toggle="modal" data-dismiss="modal">Sign up</a>
+              </p>
             </div>
-            <button class="loginBtn">Login</button>
-            <p class="signupPara">
-              you don't have an account?
-              <a href="" data-target="#signupModal" data-toggle="modal" data-dismiss="modal">Sign up</a>
-            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
+    
     <!-- Sign Up Modal -->
-
-  <div class="modal" id="signupModal">
+    
+    <div class="modal" id="signupModal">
       <div class="modal-dialog modal-dialog-centered myModal2">
         <div class="modal-content myContent2">
-
+          
           <div class="modal-body signupBody">
             <div class="signupbodyMain">
-            <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
-            <img src="./Logo/favicon1white.png" alt="">
-            <h3>Welcome to GraphixStore</h3>
-            <h3>Sign Up</h3>
+              <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
+              <img src="./Logo/favicon1white.png" alt="">
+              <h3>Welcome to GraphixStore</h3>
+              <h3>Sign Up</h3>
               <input type="text" placeholder="Username" class="username2"/>
               <input type="text" placeholder="Name" class="username2"/>
               <input type="text" placeholder="Full Name" class="username2"/>
@@ -95,7 +94,9 @@
         </div>
       </div>
     </div>
-      
+    
+    <section id="header">
+    <div class="headerMain">
       <!-- logo -->
       <div class="logo">
         <img src="./Logo/GraphixStoreLogoBlack.png" alt="" />
@@ -218,7 +219,7 @@
     </div>
     <div class="mainCartsDiv">
       <!-- cart1 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/1.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -233,7 +234,7 @@
       </div>
 
       <!-- cart2 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/2.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -248,7 +249,7 @@
       </div>
 
       <!-- cart3 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/3.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -263,7 +264,7 @@
       </div>
 
       <!-- cart4 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/4.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -278,7 +279,7 @@
       </div>
 
       <!-- cart5 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/5.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -293,7 +294,7 @@
       </div>
 
       <!-- cart6 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/6.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -308,7 +309,7 @@
       </div>
 
       <!-- cart7 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/7.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -323,7 +324,7 @@
       </div>
 
       <!-- cart8-->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/8.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -338,7 +339,7 @@
       </div>
 
       <!-- cart9 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/9.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -353,7 +354,7 @@
       </div>
 
       <!-- cart10 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/10.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -368,7 +369,7 @@
       </div>
 
       <!-- cart11 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/11.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -383,7 +384,7 @@
       </div>
 
       <!-- cart12 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/12.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -398,7 +399,7 @@
       </div>
 
       <!-- cart13 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/13.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -413,7 +414,7 @@
       </div>
 
       <!-- cart14 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/14.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -428,7 +429,7 @@
       </div>
 
       <!-- cart15 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/15.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -443,7 +444,7 @@
       </div>
 
       <!-- cart16 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/16.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -458,7 +459,7 @@
       </div>
 
       <!-- cart17 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/17.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -473,7 +474,7 @@
       </div>
 
       <!-- cart18 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/18.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -488,7 +489,7 @@
       </div>
 
       <!-- cart19 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/19.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -503,7 +504,7 @@
       </div>
 
       <!-- cart20 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/20.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -518,7 +519,7 @@
       </div>
 
       <!-- cart21 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/21.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -533,7 +534,7 @@
       </div>
 
       <!-- cart22 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/22.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -548,7 +549,7 @@
       </div>
 
       <!-- cart23 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/23.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -563,7 +564,7 @@
       </div>
 
       <!-- cart24 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
           <img src="./images/flyers/24.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -589,7 +590,7 @@
           </div>
           <div class="mainCartsDiv">
             <!-- cart1  -->
-            <div class="carts">
+            <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
               <div class="image" onclick="cartsdetail(this)">
                 <img src="./images/new/1.jpg" alt="">
                 <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -605,7 +606,7 @@
             
     
             <!-- cart2 -->
-            <div class="carts">
+            <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
               <div class="image" onclick="cartsdetail(this)">
                 <img src="./images/new/2.jpg" alt="">
                 <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -620,7 +621,7 @@
             </div>
     
             <!-- cart3 -->
-            <div class="carts">
+            <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
               <div class="image" onclick="cartsdetail(this)">
                 <img src="./images/new/3.jpg" alt="">
                 <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -635,7 +636,7 @@
             </div>
     
             <!-- cart4 -->
-            <div class="carts">
+            <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
               <div class="image" onclick="cartsdetail(this)">
                 <img src="./images/new/4.jpg" alt="">
                 <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -650,7 +651,7 @@
             </div>
     
             <!-- cart5 -->
-            <div class="carts">
+            <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
               <div class="image" onclick="cartsdetail(this)">
                 <img src="./images/new/5.jpg" alt="">
                 <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -665,7 +666,7 @@
             </div>
     
             <!-- cart6 -->
-            <div class="carts">
+            <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
               <div class="image" onclick="cartsdetail(this)">
                 <img src="./images/new/6.jpg" alt="">
                 <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -680,7 +681,7 @@
             </div>
     
             <!-- cart7 -->
-            <div class="carts">
+            <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
               <div class="image" onclick="cartsdetail(this)">
                 <img src="./images/new/7.jpg" alt="">
                 <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -695,7 +696,7 @@
             </div>
     
             <!-- cart8 -->
-            <div class="carts" id="cart8">
+            <div class="carts" id="cart8" data-aos="fade-up-right" data-aos-duration="2000">
               <div class="image" onclick="cartsdetail(this)">
                 <img src="./images/new/8.jpg" alt="">
                 <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
@@ -712,7 +713,7 @@
         </div>
 
       <!-- Announcements Section -->
-      <div id="announcements" class="container">
+      <div id="announcements" class="container" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
         <h3>Announcements</h3>
         <div id="announcImages">
           <img src="./images/announcement1.jpg" alt="" id="announceImg">
@@ -722,7 +723,7 @@
 
   <!-- Footer  -->
   <div id="endFooter">
-    <div class="container footerDiv">
+    <div class="container footerDiv" data-aos="zoom-in"  data-aos-duration="1500">
       <div class="footerContent">
         <div class="div1">
           <img src="./Logo/GraphixStoreLogoWhite.png" alt="">

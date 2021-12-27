@@ -31,14 +31,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GraphixStore</title>
   </head>
-  <body><section id="header">
-    <div class="headerMain">
-      
-      <!-- Login Modal -->
+  <body>
+    
+    <!-- Login Modal -->
     <div class="modal" id="loginModal">
     <div class="modal-dialog modal-dialog-centered myModal">
       <div class="modal-content myContent">
-
+        
         <div class="modal-body loginBody">
           <div class="bodyMain">
             <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
@@ -62,40 +61,42 @@
       </div>
     </div>
   </div>
-
-    <!-- Sign Up Modal -->
-
+  
+  <!-- Sign Up Modal -->
+  
   <div class="modal" id="signupModal">
-      <div class="modal-dialog modal-dialog-centered myModal2">
-        <div class="modal-content myContent2">
-
-          <div class="modal-body signupBody">
-            <div class="signupbodyMain">
+    <div class="modal-dialog modal-dialog-centered myModal2">
+      <div class="modal-content myContent2">
+        
+        <div class="modal-body signupBody">
+          <div class="signupbodyMain">
             <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
             <img src="./Logo/favicon1white.png" alt="">
             <h3>Welcome to GraphixStore</h3>
             <h3>Sign Up</h3>
-              <input type="text" placeholder="Username" class="username2"/>
-              <input type="text" placeholder="Name" class="username2"/>
-              <input type="text" placeholder="Full Name" class="username2"/>
-              <br />
-              <div class="signuppassword">
-                <input type="password" placeholder="Password" id="passInputSignup"/>
-                <i class="far fa-eye passwordEye" onclick="showPasswordSignup(this)"></i>
-                <input type="password" placeholder="Retype-Password" id="retypepassInputSignup"/>
-                <i class="far fa-eye retypePasswordEye" onclick="retypepassInputSignup(this)"></i>
-              </div>
-              <button class="signupBtn">Signup</button>
-              <p class="loginPara">
-                Already have an account?
-                <a href="" data-target="#loginModal" data-toggle="modal" data-dismiss="modal">Login</a>
-              </p>
+            <input type="text" placeholder="Username" class="username2"/>
+            <input type="text" placeholder="Name" class="username2"/>
+            <input type="text" placeholder="Full Name" class="username2"/>
+            <br />
+            <div class="signuppassword">
+              <input type="password" placeholder="Password" id="passInputSignup"/>
+              <i class="far fa-eye passwordEye" onclick="showPasswordSignup(this)"></i>
+              <input type="password" placeholder="Retype-Password" id="retypepassInputSignup"/>
+              <i class="far fa-eye retypePasswordEye" onclick="retypepassInputSignup(this)"></i>
             </div>
+            <button class="signupBtn">Signup</button>
+            <p class="loginPara">
+              Already have an account?
+              <a href="" data-target="#loginModal" data-toggle="modal" data-dismiss="modal">Login</a>
+            </p>
+          </div>
           </div>
         </div>
       </div>
     </div>
-      
+    
+    <section id="header">
+    <div class="headerMain">
       <!-- logo -->
       <div class="logo">
         <img src="./Logo/GraphixStoreLogoBlack.png" alt="" />
@@ -219,7 +220,7 @@
                   <h4 id="productHeading">3d Texture Color Christmas Tree Free PNG and PSD</h4>
                   <span>This image has copyright license and available for commercial use. Upgrade to Premium plan and get license authorization.</span>
               </div>
-              <div class="cartDetailImgImage" id="cartDetailImage">
+              <div class="cartDetailImgImage" id="cartDetailImage" data-aos="zoom-in" data-aos-duration="2500">
                   <img src="./images/businesscard2.jpg" alt="" id="imageDownload">
               </div>
           </div>
@@ -255,13 +256,13 @@
     </div>
     <div class="mainCartsDiv">
       <!-- cart1 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)"> 
-          <img src="./images/png1.jpg" alt="">
+          <img src="./images/pngimages/png1.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
         </div>
         <div class="footer">
-          <span id="cartSpan">3d jdhk hello</span>
+          <span id="cartSpan">Beautiful Hologram Color</span>
           <div class="footerdiv">
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
@@ -270,13 +271,13 @@
       </div>
 
       <!-- cart2 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
-          <img src="./images/png2.jpg" alt="">
+          <img src="./images/pngimages/png3.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
         </div>
         <div class="footer">
-          <span id="cartSpan">3d Texture Color Christmas Tree Free PNG and PSD</span>
+          <span id="cartSpan">Abstract Circle Technology Background</span>
           <div class="footerdiv">
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
@@ -285,13 +286,13 @@
       </div>
 
       <!-- cart3 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
-          <img src="./images/png3.jpg" alt="">
+          <img src="./images/pngimages/png4.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
         </div>
         <div class="footer">
-          <span id="cartSpan">3d Texture Color Christmas Tree Free PNG and PSD</span>
+          <span id="cartSpan">Instagram Social Media Icon Design Template</span>
           <div class="footerdiv">
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
@@ -300,13 +301,13 @@
       </div>
 
       <!-- cart4 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
-          <img src="./images/png4.png" alt="">
+          <img src="./images/pngimages/png6.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
         </div>
         <div class="footer">
-          <span id="cartSpan">3d Texture Color Christmas Tree Free PNG and PSD</span>
+          <span id="cartSpan">Black Suit Free PNG</span>
           <div class="footerdiv">
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
@@ -315,13 +316,13 @@
       </div>
 
       <!-- cart5 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
-          <img src="./images/png5.png" alt="">
+          <img src="./images/pngimages/png7.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
         </div>
         <div class="footer">
-          <span id="cartSpan">3d Texture Color Christmas Tree Free PNG and PSD</span>
+          <span id="cartSpan">Ramadan Kareem Mosque Eid Al Adha</span>
           <div class="footerdiv">
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
@@ -330,13 +331,13 @@
       </div>
 
       <!-- cart6 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-right" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
-          <img src="./images/png6.jpg" alt="">
+          <img src="./images/pngimages/png9.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
         </div>
         <div class="footer">
-          <span id="cartSpan">3d Texture Color Christmas Tree Free PNG and PSD</span>
+          <span id="cartSpan">Flower Wreath Free</span>
           <div class="footerdiv">
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
@@ -345,13 +346,13 @@
       </div>
 
       <!-- cart7 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
-          <img src="./images/png7.jpg" alt="">
+          <img src="./images/pngimages/png10.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
         </div>
         <div class="footer">
-          <span id="cartSpan">3d Texture Color Christmas Tree Free PNG and PSD</span>
+          <span id="cartSpan">Social Media Icons Set Free</span>
           <div class="footerdiv">
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>
@@ -360,13 +361,13 @@
       </div>
 
       <!-- cart8 -->
-      <div class="carts">
+      <div class="carts" data-aos="fade-up-left" data-aos-duration="2000">
         <div class="image" onclick="cartsdetail(this)">
-          <img src="./images/png8.jpg" alt="">
+          <img src="./images/pngimages/png12.jpg" alt="">
           <div class="favoriteBtn" onclick = "favoriteIcon(this)" id="favoriteBtn"><i class="far fa-thumbs-up"></i></div>
         </div>
         <div class="footer">
-          <span id="cartSpan">3d Texture Color Christmas Tree Free PNG and PSD</span>
+          <span id="cartSpan">Light Effect Free</span>
           <div class="footerdiv">
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>PSD</button>
           <button onclick = "download(this)"><i class="fas fa-file-download"></i>AI</button>

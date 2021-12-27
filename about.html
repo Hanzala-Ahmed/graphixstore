@@ -31,71 +31,72 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GraphixStore</title>
   </head>
-  <body><section id="header">
-    <div class="headerMain">
-      
-      <!-- Login Modal -->
+  <body>
+    
+    <!-- Login Modal -->
     <div class="modal" id="loginModal">
-    <div class="modal-dialog modal-dialog-centered myModal">
-      <div class="modal-content myContent">
-
-        <div class="modal-body loginBody">
-          <div class="bodyMain">
+      <div class="modal-dialog modal-dialog-centered myModal">
+        <div class="modal-content myContent">
+          
+          <div class="modal-body loginBody">
+            <div class="bodyMain">
+              <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
+              <img src="./Logo/favicon1white.png" alt="">
+              <h3>Welcome to GraphixStore</h3>
+              <h3>Login</h3>
+              <input type="text" placeholder="Username" class="username"/>
+              <br />
+              <div class="password">
+                <input type="password" placeholder="Password" id="passInput"/>
+                <i class="far fa-eye" onclick="showPassword(this)"></i>
+                <span><a href="javascript:void[0]">Forgot Password?</a></span>
+              </div>
+              <button class="loginBtn">Login</button>
+              <p class="signupPara">
+                you don't have an account?
+                <a href="" data-target="#signupModal" data-toggle="modal" data-dismiss="modal">Sign up</a>
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sign Up Modal -->
+  
+  <div class="modal" id="signupModal">
+    <div class="modal-dialog modal-dialog-centered myModal2">
+      <div class="modal-content myContent2">
+        
+        <div class="modal-body signupBody">
+          <div class="signupbodyMain">
             <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
             <img src="./Logo/favicon1white.png" alt="">
             <h3>Welcome to GraphixStore</h3>
-            <h3>Login</h3>
-            <input type="text" placeholder="Username" class="username"/>
+            <h3>Sign Up</h3>
+            <input type="text" placeholder="Username" class="username2"/>
+            <input type="text" placeholder="Name" class="username2"/>
+            <input type="text" placeholder="Full Name" class="username2"/>
             <br />
-            <div class="password">
-              <input type="password" placeholder="Password" id="passInput"/>
-              <i class="far fa-eye" onclick="showPassword(this)"></i>
-              <span><a href="javascript:void[0]">Forgot Password?</a></span>
+            <div class="signuppassword">
+              <input type="password" placeholder="Password" id="passInputSignup"/>
+              <i class="far fa-eye passwordEye" onclick="showPasswordSignup(this)"></i>
+              <input type="password" placeholder="Retype-Password" id="retypepassInputSignup"/>
+              <i class="far fa-eye retypePasswordEye" onclick="retypepassInputSignup(this)"></i>
             </div>
-            <button class="loginBtn">Login</button>
-            <p class="signupPara">
-              you don't have an account?
-              <a href="" data-target="#signupModal" data-toggle="modal" data-dismiss="modal">Sign up</a>
+            <button class="signupBtn">Signup</button>
+            <p class="loginPara">
+              Already have an account?
+              <a href="" data-target="#loginModal" data-toggle="modal" data-dismiss="modal">Login</a>
             </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-    <!-- Sign Up Modal -->
-
-  <div class="modal" id="signupModal">
-      <div class="modal-dialog modal-dialog-centered myModal2">
-        <div class="modal-content myContent2">
-
-          <div class="modal-body signupBody">
-            <div class="signupbodyMain">
-            <i class="fas fa-times closeBtn" data-dismiss="modal"></i>
-            <img src="./Logo/favicon1white.png" alt="">
-            <h3>Welcome to GraphixStore</h3>
-            <h3>Sign Up</h3>
-              <input type="text" placeholder="Username" class="username2"/>
-              <input type="text" placeholder="Name" class="username2"/>
-              <input type="text" placeholder="Full Name" class="username2"/>
-              <br />
-              <div class="signuppassword">
-                <input type="password" placeholder="Password" id="passInputSignup"/>
-                <i class="far fa-eye passwordEye" onclick="showPasswordSignup(this)"></i>
-                <input type="password" placeholder="Retype-Password" id="retypepassInputSignup"/>
-                <i class="far fa-eye retypePasswordEye" onclick="retypepassInputSignup(this)"></i>
-              </div>
-              <button class="signupBtn">Signup</button>
-              <p class="loginPara">
-                Already have an account?
-                <a href="" data-target="#loginModal" data-toggle="modal" data-dismiss="modal">Login</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      
+  
+  <section id="header">
+  <div class="headerMain">
       <!-- logo -->
       <div class="logo">
         <img src="./Logo/GraphixStoreLogoBlack.png" alt="" />
@@ -214,31 +215,31 @@
   <!-- About Us Section  -->
   <div id="aboutMain">
 
-    <div class="about1">
+    <div class="about1" data-aos="fade-up">
       <div class="aboutContent">
         <h1>Resources for everyone</h1>
         <span>Over 2 million free high-resolution resources brought to you by the world's most generous community of graphic designers.</span>
         <button data-target="#signupModal" data-toggle="modal">Start Now</button>
       </div>
       <div class="aboutContentImage">
-        <img src="./images/about1.jpg" alt="">
+        <img src="./images/about1.jpg" alt="" data-aos="zoom-in">
       </div>
     </div>
 
     <div class="about2">
       <h1>Our Developement Story</h1>
       <div class="about2Div">
-        <div>
+        <div data-aos="flip-right" data-aos-duration="2000">
           <i class="fas fa-users"></i>
           <h3>More than 1k+</h3>
           <span>Our images serve more than 1k users around the world</span>
         </div>
-        <div>
+        <div data-aos="flip-left" data-aos-duration="2000">
           <i class="fas fa-download"></i>
           <h3>More than 1k+</h3>
           <span>The images have been downloaded and distributed more than 1k times worldwide</span>
         </div>
-        <div>
+        <div data-aos="flip-right" data-aos-duration="2000">
           <i class="fas fa-image"></i>
           <h3>1000+</h3>
           <span>Our PNG transparent contents are more than thousand, and updated more than 100 each month</span>
@@ -250,7 +251,7 @@
 
     <div class="about3">
       <div class="about3ContentImage">
-        <img src="./images/about3.jpg" alt="">
+        <img src="./images/about3.jpg" alt="" data-aos="zoom-in">
       </div>
       <div class="about3Content">
         <h1>Is it really free? Yes.</h1>
@@ -269,7 +270,7 @@
 
   <!-- Footer  -->
   <div id="endFooter">
-    <div class="container footerDiv">
+    <div class="container footerDiv" data-aos="zoom-in"  data-aos-duration="1500">
       <div class="footerContent">
         <div class="div1">
           <img src="./Logo/GraphixStoreLogoWhite.png" alt="">
